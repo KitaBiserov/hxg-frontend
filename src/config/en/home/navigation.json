@@ -1,0 +1,26 @@
+{
+    "list": [
+    {
+      "id": 1,
+      "title": "About",
+      "link": "",
+      "extentions": [
+        { "label": "Company", "link": "/about" },
+        { "label": "Vacancy", "link": "/vacancy" }
+      ]
+    },
+    {
+        "id": 2,
+        "title": "Equipment",
+      "link": "",
+      "extentions": [
+        { "label": "IT", "link": "/it-equipment" },
+        { "label": "Energy", "link": "/energy-equipment" },
+        { "label": "Construction Machine", "link": "/construction-machine" },
+        { "label": "Consumer Goods", "link": "/consumer-equipment" }
+      ]
+    },
+    {"id": 3, "title": "Contacts", "link": "/contacts", "extentions": [  { "label": "Contacts", "link": "/contacts" }] }
+
+  ]
+}

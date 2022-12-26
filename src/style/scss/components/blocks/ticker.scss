@@ -1,0 +1,26 @@
+@import "../variables.scss";
+
+.ticker-container {
+  width: 100%;
+  padding-right: 100px!important;;
+  display: flex;
+  height: 100px;
+  margin-right: 50px !important;
+  
+
+  .ticker-item {
+    padding-right: 100px!important;
+    width: 30px;
+    display: flex;
+    margin-left: 70px !important;
+  }
+  @media (max-width: $breakpoint-xr) {
+    margin-left: 10px !important;
+  }
+  img {
+    height: 30px;
+    padding-right: 100px!important;;
+    margin-left: 50px !important;
+    margin-right: 50px !important;
+  }
+}

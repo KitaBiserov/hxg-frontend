@@ -1,0 +1,179 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+/* SECTION: FEEDBACK */
+.sc-feedback {
+
+  
+
+  background-color: $SecondBlack;
+  $self: &;
+  @include background-rules;
+  position: relative;
+  z-index: 10;
+  //background-color: $darkGray;
+  
+  padding: 70px 50px 100px 50px ;
+  
+  @media (max-width: $breakpoint-lg) {
+    padding: 40px 0 58px 0;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    padding: 30px 0 48px 0;
+  }
+
+  @media (max-width: 399.99px) {
+    padding: 20px 0 32px 0;
+  }
+
+
+  &__main-page{
+    background-position: 85%;
+    background-size: 20%;
+    background-image: url('../../../images/main/preview.png');
+
+     
+    @media (max-width: $breakpoint-xr) {
+      background-size: 48%;
+      background-position: 130%;
+    }
+    
+  @media (max-width: 375px) {
+    background-size: 35%;
+  }
+  }
+  &__wrapper-img {
+    grid-column: span 3;
+    position: relative;
+  
+  
+    @media (max-width: $breakpoint-md) {
+      display: none;
+      grid-column: unset;
+    }
+  }
+
+  .overlay-active{
+    background-color: $BlackShadow;
+    opacity: 1;
+    left: 50%;
+    right: 50%;
+    width: 100%;
+    z-index: 99999;
+  }
+  .overlay{
+    //background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    left: 50%;
+    right: 50%;
+  }
+
+  &__img {
+    max-width: 458px;
+    width: 458px;
+    position: absolute;
+    top: calc(-100% - 54px);
+    left: -112px;
+
+    @media (max-width: $breakpoint-xl) {
+      max-width: 388px;
+      left: -108px;
+      top: -85%;
+    }
+
+    @media (max-width: $breakpoint-lg) {
+      max-width: 300px;
+      width: 300px;
+      left: -68px;
+      top: -86px;
+    }
+
+    @media (max-width: 849.99px) {
+      max-width: 280px;
+      width: 280px;
+      left: -85px;
+    }
+
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }
+    
+    &--min {
+      top: unset!important;
+      bottom: -284px;
+      left: -108px!important;
+      max-width: 458px!important;
+      height: auto;
+
+      @media (max-width: $breakpoint-xl) {
+        bottom: -244px;
+      }
+
+      @media (max-width: $breakpoint-lg) {
+        max-width: 263px!important;
+        left: -38px!important;
+        bottom: -24px;
+      }
+
+      @media (max-width: 879.99px) {
+        left: -58px!important;
+      }
+
+      @media (max-width: 824.99px) {
+        left: -78px!important;
+      }
+    }
+  }
+
+
+  &__form-control {
+    
+    margin: 0 30%;
+    grid-column-start: 5;
+    grid-column-end: 13;
+
+    @media (max-width: $breakpoint-lg) {
+      grid-column-start: 4;
+      grid-column-end: 12;
+    } 
+    
+    @media (max-width: $breakpoint-md) {
+      grid-column: span 12;
+    }  
+
+    @media (max-width: $breakpoint-sm) {
+      grid-column-start: 1;
+      grid-column-end: 11;
+    }
+
+    @media (max-width: $breakpoint-xr) {
+      display: block;
+      margin: 0 0;
+      
+    }
+
+
+    @media (max-width: 399.99px) {
+      grid-column: span 6;
+    }
+
+    @media (max-width: $breakpoint-xsm) {
+      grid-column: span 6;
+    }
+  }
+
+  
+
+  &__title,
+  &__desc {
+    color: #fff;
+  }
+
+}
+
+.client-feedback {
+  margin-left: auto;
+  
+}

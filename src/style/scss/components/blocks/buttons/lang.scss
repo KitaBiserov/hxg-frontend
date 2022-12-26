@@ -1,0 +1,80 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+
+// Components: LANG BUTTON
+.lang {
+  color: $mainOrange;
+  $self: &;
+  margin-right: 30px;
+  margin-left: 75px;
+  display: flex;
+  align-items: center;
+  //background-color: #F3F3F3;
+  max-width: 79.5px;
+
+  @media (max-width: breakpoint-lg) {
+    margin-left: 40px;
+  }
+
+ 
+
+ 
+  &__btn{
+    color: $mainOrange;
+  }
+  &__item {
+    @include flex-center;
+    @include transition-colors;
+
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    border-radius: 4px;
+    background-color: #F3F3F3;
+    user-select: none;
+
+    a {
+      color: black;
+      text-decoration: none;
+      outline: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: #000;
+    }
+
+    &--active {
+      background-color: $mainYellow;
+      color: #000;
+    }
+  }
+  
+  &--red {
+    background-color: $mainRed;
+     
+    #{ $self }__item {
+      background-color: $mainRed;
+      color: #fff;
+
+      &:hover {
+        color: $mainOrange;
+      }
+
+      &--active {
+        background-color: $mainOrange;
+        color: #000;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+
+
+}

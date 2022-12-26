@@ -1,0 +1,24 @@
+ {
+    "list": [
+      {
+        "id": 1,
+        "title": "All",
+        "extentions": []
+      },
+      {
+        "id": 2,
+        "title": "Mobile",
+        "extentions": []
+      },
+      {
+        "id": 3,
+        "title": "PC & Laptop",
+        "extentions": []
+      },
+      {
+        "id": 4,
+        "title": "Accessories",
+        "extentions": []
+      }
+    ]
+  }

@@ -1,0 +1,24 @@
+{
+    "catalogHeaderContentList": [
+      {
+        "id": 0,
+        "title": "Consumer Goods",
+        "description": "Huaxun group provide construction IT solutions"
+      },
+      {
+        "id": 1,
+        "title": "Mobile",
+        "description": ""
+      },
+      {
+        "id": 2,
+        "title": "PC & Laptop",
+        "description": ""
+      },
+      {
+        "id": 3,
+        "title": "Accessories",
+        "description": ""
+      }
+    ]
+  }

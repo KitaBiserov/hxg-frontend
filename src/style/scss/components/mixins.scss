@@ -1,0 +1,33 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- Mixins Files ---------------------------------
+//  ------------------------------------------------------------------------------
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin transition-colors {
+  transition-property: background-color, color, box-shadow;
+  transition-timing-function: linear;
+  transition-duration: $timeTrans; 
+}
+
+@mixin fix-height {
+  height: intrinsic;  
+  height: -moz-max-content;
+  height: -webkit-max-content;  
+}
+
+@mixin fix-width {
+  width: intrinsic;  
+  width: -moz-max-content;
+  width: -webkit-max-content;  
+}
+
+@mixin background-rules {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}

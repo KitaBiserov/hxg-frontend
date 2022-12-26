@@ -1,0 +1,75 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+
+// Components: BUTTON ARROW
+.arrow {
+ 
+  $self: &;
+  &:before {
+    background-size: 100%;
+    content: '';
+    background-color: red;
+    background: url("../../../../images/arrow.png");
+  }
+ 
+  @include flex-center; 
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  min-height: 46px;
+  border-radius: 50%;
+ 
+  opacity: 1;
+
+  transition-timing-function: linear;
+  transition-duration: $timeTrans;
+
+  &:hover {
+    cursor: pointer;
+    opacity: .8;
+  }
+  
+  &.slick-disabled {
+    background-color: #F3F3F3;
+
+    #{ $self }__svg {
+      #{ $self }__path {
+        fill: $mainGray;
+      }
+    }
+
+    &:hover {
+      background-color: $mainOrange;
+
+      #{ $self }__svg {
+        #{ $self }__path {
+          fill: #F9F9F9;
+        }
+      }
+    }
+  }
+
+  &--infinite {
+    background-color: #F3F3F3;
+
+    #{ $self }__svg {
+      #{ $self }__path {
+        fill: $mainGray;
+      }
+    }
+    
+    &:hover {
+      opacity: 1;
+      background-color: $mainOrange;
+
+      #{ $self }__svg {
+        #{ $self }__path {
+          fill: #F9F9F9;
+        }
+      }      
+    }
+  }
+}
+

@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "title": "Huang Guoliangn",
+        "label": "Founder & CEO",
+        "description": [
+            "2001-2013: HUAWEI MTS SalesDirector Consuming BG Group VP",
+            "2013: WISETECH  founder",
+            "2018:  Huaxun Group founder & CEO"
+        ],
+        "image": "./assets/img/persona/CEO.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Akimov Dmitry",
+        "label": "CCO DUTIES",
+        "description": [
+            "2007-2013 HUAWEI: Sale director Beeline",
+            "2013- 2015: Microsoft Sales Director",
+            "2015-2019: Yandex, Mail.ru Private cloud Director",
+            "2019:  Huaxun Group CCO"
+        ],
+        "image": "./assets/img/persona/CCO.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Vladimir Kostrov",
+        "label": "Partner",
+        "description": [
+            "30 years of experience as a leader and member of the Board of Directors in the largest telecommunications companies: telecom operators and integrators",
+            "Candidate of Science(Engineering)",
+            "2019:  Huaxun Group Partner"
+        ],
+        "image": "./assets/img/persona/Partner.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Ildus mukhutdinov",
+        "label": "Chief Engineer",
+        "description": [
+            "1998-2005:  Alcaltel",
+            "2005-2009: Nortel Networks",
+            "2009-2015:  HUAWEI  Senior Engineer",
+            "2015:  Wisetech   Chief Engineer",
+            "2019:  Huaxun Group  Chief Engineer"
+        ],
+        "image": "./assets/img/persona/Chief Engineer.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Kirill Kramnik",
+        "label": "Partner",
+        "description": [
+            "Head of the direction e-commerce",
+            "Develops and manages e-commerce business strategies"
+        ],
+        "image": "./assets/img/persona/KirillKramnik.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Lyubov Inyakina",
+        "label": "Finance Director",
+        "description": [
+            "More than 15 years of work experience",
+            "Specialist in business planning, budgeting, financial analytics, etc."
+        ],
+        "image": "./assets/img/persona/Lubov.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Semyon Kuznetsov",
+        "label": "Development Director",
+        "description": [
+            "Develops and leads the direction of energy and construction equipment"
+        ],
+        "image": "./assets/img/persona/DevelopmentDirector.jpg"
+    }
+]

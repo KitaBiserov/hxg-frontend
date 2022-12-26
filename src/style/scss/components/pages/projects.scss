@@ -1,0 +1,101 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+
+.sc-allprojects {
+  margin-top: 80px;
+  margin-bottom: 150px;
+
+  @media (max-width: $breakpoint-lg) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  } 
+
+  @media (max-width: $breakpoint-md) {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  } 
+
+  @media (max-width: $breakpoint-sm) {
+    margin-top: calc(200px + 40px);
+    margin-bottom: 40px;
+  } 
+
+  @media (max-width: 359px) {
+    margin-top: calc(150px + 40px);
+    margin-bottom: 40px;
+  } 
+
+  @media (max-width: $breakpoint-xsm) {
+    margin-top: calc(69px + 30px);
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $breakpoint-alternative-xsm) {
+    margin-top: calc(25px + 30px);
+  }
+
+  &__wrapper {
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  &__project {
+    grid-column: span 4;
+
+    @media (max-width: $breakpoint-lg) {
+      grid-column: span 6;
+
+      &:nth-child(n + 7) {
+        display: none;
+      }
+    } 
+
+    @media (max-width: $breakpoint-sm) {
+      &:nth-child(n + 5) {
+        display: none;
+      }
+    }   
+
+    @media (max-width: $breakpoint-xsm) {
+      grid-column: span 2;
+    } 
+  }
+
+  &__wrapper-btn {
+    grid-column: span 12;
+    display: none;
+
+    @media (max-width: $breakpoint-lg) {
+      @include flex-center;
+      margin-top: 50px;
+    } 
+
+    @media (max-width: $breakpoint-sm) {
+      margin-bottom: 40px;
+      grid-column: span 6;
+    } 
+
+    @media (max-width: $breakpoint-xsm) {
+      margin-bottom: 30px;
+      grid-column: span 2;
+    } 
+  }
+
+  &__btn-all {
+    background-color: #E6E6E6;
+    max-width: 161px;
+    width: 161px;
+    min-height: 62px;
+    height: 62px;
+    max-height: 62px;
+    padding: 22px 30px 20px;
+
+    @media (max-width: $breakpoint-md) {
+      min-height: 52px;
+      height: 52px;
+      max-height: 52px;
+    } 
+  }
+}

@@ -1,0 +1,145 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 19.5px 34px 19.5px;
+  border-radius: $OuterBorderRadius;
+  border: $OuterBorder;
+  position: relative;
+  
+
+  @media (max-width: $breakpoint-xl) {
+    padding: 32px 19.5px 34px 19.5px;
+  }
+
+  @media (max-width: $breakpoint-lg) {
+    padding: 30px 30px 41px 30px;
+  }  
+
+ 
+
+  @media (max-width: $breakpoint-lg) {
+    padding: 30px 30px 25px 30px;
+  }  
+  @media (max-width: $breakpoint-xr) {
+    padding: 20px 20px 20px 20px;
+    margin-top: 70px;
+  }
+  @media (max-width: $breakpoint-sm) {
+    padding: 30px 30px 33px 30px;
+  }  
+
+  @media (max-width: $breakpoint-xsm) {
+    padding: 30px 20px 30px 20px;
+  }   
+
+ // &:before,
+ // &:after {
+ //   content: "";
+ //   display: block;
+ //   position: absolute;
+ //   width: 42px;
+ //   min-width: 42px;
+  //  height: 42px;
+ //   min-height: 42px;
+ //   background-color: #fff;
+ // }
+
+  &:before {
+    top: -2px;
+    right: -2px;
+  }
+
+  &:after {
+    bottom: -2px;
+    left: -2px;
+  }
+
+  &__line {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 64px;
+      width: 64px;
+      border-radius: 11px;
+      z-index: 3;
+      transform: rotate(48deg);
+    }
+
+   // &:after {
+  //    top: 7px;
+  //    right: 8px;
+  ////    border-top: 1px solid #F3F3F3;
+  //  }
+
+ //   &:before {
+ //     bottom: 9px;
+ //     left: 8px;
+ //     border-bottom: 1px solid #F3F3F3;
+//   }
+  }
+
+  &__wrapper-icon {
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 4;
+
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 30px;
+    }  
+  }
+
+  &__wrapper-text {
+    text-align: center;
+    position: relative;
+    z-index: 4;    
+  }
+
+  &__title {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 10px;
+
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 5px;
+    }  
+  }
+
+  &__desc {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  &__svg {
+    max-width: 132px;
+    max-height: 128px;
+    width: 132px;
+    height: 128px;
+  }
+  &__link {
+    margin-right: 25px;
+  }
+  
+}
+
+.fire {
+  animation: balloon 15s infinite linear;
+  transform:  scale(1.1);
+  box-shadow:  0 13px 27px -5px rgba(50,50,93,0.25), 0 0 10px 5px rgba(255, 0, 0, 0.3);
+  filter: drop-shadow(10px 10px 200px #bf1515) drop-shadow(-10px -10px 50px  #FFA630);
+
+}

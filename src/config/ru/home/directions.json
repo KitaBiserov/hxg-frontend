@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "title": "Информационные технологии",
+      "image": "images/directions/server.svg",
+      "desciption": "Our awsome text",
+      "link": "/it-equipment"
+    },
+    {
+      "id": 2,
+      "title": "Энергетика",
+      "image": "images/directions/energy.svg",
+      "desciption": "Our awsome text",
+      "link": "/energy-equipment"
+    },
+    {
+     "id": 3,
+      "title": "Строительная техника",
+      "image": "images/directions/constructor.svg",
+      "desciption": "Our awsome text",
+      "link": "/construction-machine"
+    },
+    {
+      "id": 4,
+      "title": "потребительские товары",
+      "image": "images/directions/consumer-goods.svg",
+      "desciption": "Our awsome text",
+      "link": "/consumer-equipment"
+    }
+  ]

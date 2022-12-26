@@ -1,0 +1,104 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+.sc-persona {
+ 
+  &__image-container {
+    height: 600px;
+    width: auto;
+    background-position-x: center;
+    background: no-repeat;
+    background-size: 75%;
+    background-origin: border-box;
+   // border-radius: $InnerBorderRadius;
+   
+    @media (max-width: $breakpoint-xr) {
+      
+      background-size: 125%;
+      background-position: center top;
+      background-repeat: no-repeat no-repeat;
+      justify-content: center;
+      align-items: center;
+     
+    }
+   
+  
+  }
+
+  
+  &__slider {
+    height: 625px !important;
+    width: auto;
+    
+
+    ol {
+      font-family: "Century Gothic";
+      font-weight: 600;
+      display: block;
+      margin: 30px auto;
+      font-size: 24px;
+      list-style-type: none;
+
+      @media (max-width: $breakpoint-xr) {
+        margin: 10px auto;
+    }
+      li{
+        @media (max-width: $breakpoint-xr) {
+            font-size: 16px;
+        }
+        text-align: unset;
+        align-items: center;
+      }
+    }
+    label {
+      
+      color: $mainRed;
+      font-size: 20px;
+      font-weight: 800;
+      font-family: "HelveticaNeueCyr";
+    }
+  }
+
+  &__title-box {
+    width: 100%;
+    text-align: center;
+    margin-right: 100px;
+    @media (max-width: $breakpoint-xr) {
+      background-color: rgba(255, 255, 255, 0.4);
+      
+      
+      height: 300px;
+      position: relative;
+      top:60%;
+    }
+  }
+  .persona-slider {
+    height: 800px;
+    width: auto;
+  }
+  &__grid {
+
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    padding: 10px 10px;
+    @media (max-width: $breakpoint-xr) {
+      display: block;
+    }
+  }
+
+  h2 {
+    font-family: "HelveticaNeueCyr";
+    font-weight: 800;
+    font-size: 26px;
+    color: $testBlack;
+    border-bottom: 2px solid $mainRed;
+  
+  
+  }
+
+}

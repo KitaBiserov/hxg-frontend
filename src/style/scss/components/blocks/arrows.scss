@@ -1,0 +1,234 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+
+.arrows {
+  $self: &;
+
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
+  &__arrow {
+    position: relative;
+    margin: auto 0;
+    z-index: 9999;
+  }
+
+  &--projects-about {
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    } 
+
+    #{ $self }__arrow--prev {
+      left: calc(-32px - 60px);
+      
+      @media (max-width: 1499.99px) {
+        left: calc(-32px - 20px);
+      }
+
+      @media (max-width: 1409.99px) {
+        left: -8px;
+      }
+
+      @media (max-width: 1306.99px) {
+        left: calc(14px + 15px);
+      }
+
+      @media (max-width: $breakpoint-lg) {
+        left: calc(14px + 15px);
+      }      
+    }
+
+    #{ $self }__arrow--next {
+      right: calc(-64px - 60px);
+
+      @media (max-width: 1499.99px) {
+        right: calc(-64px - 20px);
+      }
+
+      @media (max-width: 1409.99px) {
+        right: -34px;
+      }  
+      
+      @media (max-width: 1306.99px) {
+        right: 0;
+      }
+    }
+  }
+
+  &--gallery {
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    } 
+    
+    #{ $self }__arrow--prev {
+      left: calc(-31px - 60px);
+      
+      @media (max-width: 1451.99px) {
+        left: calc(-31px - 20px);
+      }
+
+      @media (max-width: 1369.99px) {
+        left: calc(12px - 21.5px);
+      }
+
+      @media (max-width: 1277.99px) {
+        left: 14px;
+      }    
+    }
+    
+    #{ $self }__arrow--next {
+      right: calc(-47px - 60px);
+
+      @media (max-width: 1451.99px) {
+        right: calc(-47px - 20px);
+      }
+
+      @media (max-width: 1369.99px) {
+        right: -21.5px;
+      }  
+      
+      @media (max-width: 1277.99px) {
+        right: 0;
+      }
+
+      @media (max-width: $breakpoint-lg) {
+        right: 16px;
+      }  
+    }    
+  }
+
+  &--partners {
+
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }  
+
+    #{ $self }__arrow--prev {
+      left: calc(-46px - 60px);
+      
+      @media (max-width: 1419.99px) {
+        left: calc(-46px - 20px);
+      }
+
+      @media (max-width: 1334.99px) {
+        left: calc(-46px / 2);
+      }
+
+      @media (max-width: 1299.99px) {
+        left: -10px;
+      }
+
+      @media (max-width: $breakpoint-lg) {
+        left: calc(-46px / 2);
+      }      
+    }
+
+    #{ $self }__arrow--next {
+      right: calc(-16px - 60px);
+
+      @media (max-width: 1419.99px) {
+        right: calc(-16px - 20px);
+      }
+
+      @media (max-width: 1334.99px) {
+        right: 8px;
+      }  
+      
+      @media (max-width: 1299.99px) {
+        right: 20px;
+      }
+
+      @media (max-width: $breakpoint-lg) {
+        right: 17px;
+      }  
+    }      
+  }
+
+  &--projects {
+    @media (max-width: 1334.99px) {
+      max-width: 40.1%;
+      padding: 0 30px;
+      left: 0;
+    } 
+    
+    @media (max-width: $breakpoint-md) {
+      max-width: 100%;
+      top: 30%;
+    }   
+    
+    @media (max-width: 642.99px) {
+      top: 28%;
+    }        
+
+    @media (max-width: 599.99px) {
+      top: 24%;
+    } 
+
+    @media (max-width: $breakpoint-sm) {
+      top: 22%;
+    } 
+
+    @media (max-width: 465.99px) {
+      top: 19%;
+    } 
+
+    @media (max-width: 410.99px) {
+      top: 16%;
+    } 
+
+    @media (max-width: 399.99px) {
+      top: 20%;
+    } 
+
+    @media (max-width: 359.99px) {
+      top: 19%;
+    } 
+
+    @media (max-width: $breakpoint-xsm) {
+      top: 11%;
+      padding-left: 35px;
+      padding-right: 50px;
+    } 
+
+    @media (max-width: $breakpoint-alternative-xsm) {
+      top: 10%;
+    }   
+
+    #{ $self }__arrow {
+      margin: auto 0;
+
+      @media (max-width: $breakpoint-md) {
+        margin: unset;
+      }     
+    } 
+    
+    #{ $self }__arrow--prev {
+      left: calc(-46px - 60px);
+
+      @media (max-width: 1419.99px) {
+        left: calc(-46px - 20px);
+      }   
+      
+      @media (max-width: 1334.99px) {
+        left: 0;
+      }  
+    }
+  
+    #{ $self }__arrow--next {
+      right: calc(-16px - 60px);
+
+      @media (max-width: 1419.99px) {
+        right: calc(-16px - 20px);
+      } 
+
+      @media (max-width: 1334.99px) {
+        right: 0;
+      }  
+    }
+  }
+}

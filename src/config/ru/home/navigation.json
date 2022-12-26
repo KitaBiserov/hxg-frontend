@@ -1,0 +1,26 @@
+{
+    "list": [
+    {
+      "id": 1,
+      "title": "О нас",
+      "link": "",
+      "extentions": [
+        { "label": "Компания", "link": "/about" },
+        { "label": "Вакансии", "link": "/vacancy" }
+      ]
+    },
+    {
+        "id": 2,
+        "title": "Оборудование",
+      "link": "",
+      "extentions": [
+        { "label": "Информационные технологии", "link": "/it-equipment" },
+        { "label": "Энергетика", "link": "/energy-equipment" },
+        { "label": "Строительная техника", "link": "/construction-machine" },
+        { "label": "Потребительские товары", "link": "/consumer-equipment" }
+      ]
+    },
+    {"id": 3, "title": "Контакты", "link": "/contacts", "extentions": [  { "label": "Контакты", "link": "/contacts" }] }
+
+  ]
+}

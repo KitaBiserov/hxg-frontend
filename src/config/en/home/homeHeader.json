@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "title": "Huaxun Group",
+      "description": "we are provide best solutions for your purposes",
+      "image": "./assets/img/main.gif",
+      "link": "/about",
+      "backgroundImage": "main"
+    },
+    {
+      "id": 2,
+      "title": "SharQ Servers",
+      "description": "New SharQ Server Series ",
+      "image": "./assets/img/main.gif",
+      "link": "/it-equipment",
+      "backgroundImage": "servers"
+    }
+  ]

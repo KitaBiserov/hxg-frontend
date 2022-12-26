@@ -1,0 +1,92 @@
+@import "../variables.scss";
+
+.tabs{
+   
+    ul{
+        display: flex;
+        
+    }
+}
+.tab-list{
+        
+      @media (max-width: 414px) {
+        display: block;
+      }
+
+      @media (max-width: 575px) {
+        display: block;
+      }
+        border-radius: $OuterBorderRadius;
+    &__tab{
+               
+              
+               
+                text-align: center;
+    }
+    user-select: none;
+   
+    .activeTab{
+        box-shadow:  0 13px 27px -5px rgba(50,50,93,0.25), 0 0 10px 5px rgba(255, 0, 0, 0.3);
+    }
+    h2{
+        padding: 20px 20px 20px 20px;
+        font-size: 28px;
+      
+    }
+
+    ::before {
+        display: none;
+    }
+
+    ::select{
+        display: none;
+    }
+
+    .react_tabs__tab{
+        &--selected{
+            border: 0px,
+        }
+    }
+
+    li{
+        
+        margin-left: 120px;
+        font-size: 18px;
+        border: $OuterBorder;
+        border-radius: $InnerBorderRadius;
+
+        @media (max-width:$breakpoint-lg) {
+            margin-left: 0px;
+            
+        }
+
+
+        @media (max-width:$breakpoint-xr) {
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+    }
+   
+}
+
+.popup-tabs{
+    position: static;
+    width: 100%;
+    ul{
+        display: inline-flex;
+        margin-bottom: 20px;
+        
+        @media (width: 375px) {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 575px) {
+            display: block;
+       
+        }
+    }
+}
+
+
+

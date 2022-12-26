@@ -1,0 +1,173 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+
+// BLOCK: SLIDER  
+.slider {
+  $self: &;
+
+  
+  width: 100%; //убрать если не будет работать
+  grid-column: span 12;
+  position: relative;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+
+  @media (max-width: $breakpoint-sm) {
+    grid-column: span 6;
+  }  
+
+  @media (max-width: $breakpoint-xsm) {
+    grid-column: span 2;
+  }  
+
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-right: -30px;
+    transform: translate3d(0, 0, 0);
+    padding: 0;
+
+    @media (max-width: $breakpoint-xsm) {
+      margin-right: 0;
+    }  
+  }
+
+  .slick-track {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .slick-slide {
+    display: block;
+    height: 100%;
+    min-height: 1px;
+  }
+
+  &--projects-about {
+    .slick-slide {
+      max-width: 600px;
+      width: 600px;
+      margin-right: 30px;
+
+      @media (max-width: $breakpoint-lg) {
+        max-width: 450px;
+        width: 450px;
+      } 
+
+      @media (max-width: $breakpoint-sm) {
+        max-width: 510px;
+        width: 510px;
+      } 
+      
+      @media (max-width: 488px) {
+        max-width: 290px;
+        width: 290px;
+      }  
+    }
+
+    #{ $self }__item {
+      width: 100%;
+    }
+  }
+
+  &--partners {
+    .slick-slide {
+      max-width: calc(280px - 2px);
+      width: calc(280px - 2px);
+      margin-right: 30px;
+
+      @media (max-width: $breakpoint-md) {
+        max-width: calc(290px - 2px);
+        width: calc(290px - 2px);
+      } 
+      
+      @media (max-width: $breakpoint-xsm) {
+        max-width: calc(240px - 2px);
+        width: calc(240px - 2px);
+      }  
+    }
+
+    #{ $self }__item {
+      width: 100%;
+    }
+  }
+
+  &--gallery {
+    .slick-slide {
+      max-width: 385px;
+      width: 385px;
+      margin-right: 30px;
+
+      @media (max-width: $breakpoint-lg) {
+        max-width: 285px;
+        width: 285px;
+      } 
+      
+      @media (max-width: $breakpoint-md) {
+        margin-right: 10px;
+      }  
+
+      @media (max-width: $breakpoint-xsm) {
+        max-width: 270px;
+        width: 270px;
+      }  
+    }
+
+    #{ $self }__item {
+      width: 100%;
+    }
+  }
+   
+  &--projects {
+    width: 100%;
+    margin-left: -15px;
+    padding-right: 15px;
+
+    @media (max-width: $breakpoint-xsm) {
+      margin-left: 0;
+    } 
+
+    .slick-slide {
+      max-width: 100%;
+      width: 100%!important;
+    }
+  }
+
+ &--persona {
+    .slick-slide {
+      max-width: 1200px;
+      width: 1200px;
+      margin-right: 30px;
+
+      @media (max-width: $breakpoint-lg) {
+        max-width: 450px;
+        width: 450px;
+      } 
+
+      @media (max-width: $breakpoint-sm) {
+        max-width: 510px;
+        width: 510px;
+      } 
+      
+      @media (max-width: 488px) {
+        max-width: 290px;
+        width: 290px;
+      }  
+    }
+
+    #{ $self }__item {
+      width: 100%;
+    }
+  }
+
+}

@@ -1,0 +1,24 @@
+{
+  "catalogHeaderContentList": [
+    {
+      "id": 0,
+      "title": "Internet Technologies",
+      "description": "our company has an extensive experience in the supply of computing and network infrastructures, data storage systems from China "
+    },
+    {
+      "id": 1,
+      "title": "Servers",
+      "description": "a specialized computer allocated from a group of personal computers (or workstations) to perform a service task without direct human involvement. The server and the workstation can have the same hardware configuration, since they differ only in the participation of the person at the console in their work."
+    },
+    {
+      "id": 2,
+      "title": "Networking",
+      "description": "devices connect equipment into one or more interacting systems. Routers, switches, cable, switching panels and hubs mounting cabinets and racks."
+    },
+    {
+      "id": 3,
+      "title": "Storage Systems",
+      "description": "is a complex of hardware and software that provides data storage on physical media and provides access to this data under established conditions."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+
+.box-content {
+  $self: &;
+  
+  border: 1px solid #F3F3F3;
+  border-radius: 6px;
+  padding: 35px 40px;
+
+  @media (max-width: $breakpoint-lg) {
+    padding: 35px 40px 40px;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: 25px 30px 30px;
+  }
+  
+  @media (max-width: $breakpoint-sm) {
+    padding: 25px 30px 30px;
+  }
+
+  @media (max-width: $breakpoint-xsm) {
+    padding: 20px 20px 20px;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 39px;
+
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 19px;
+    }
+
+    @media (max-width: $breakpoint-sm) {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 13px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 30px;
+    margin-bottom: -10px;
+
+    @media (max-width: $breakpoint-md) {
+      display: flex;
+      flex-direction: column;
+      column-gap: unset;
+    }
+
+    &--horizontal {
+      display: flex;
+      flex-direction: column;
+
+      #{ $self }__item {
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__item {
+    grid-column: span 1;
+    margin-bottom: 10px;
+  }
+}

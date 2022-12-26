@@ -1,0 +1,86 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+
+.nav-page {
+  $self: &;
+
+  position: absolute;
+  top: calc(-65px + 30px);
+  display: flex;
+
+  @media (max-width: $breakpoint-md) {
+    top: calc(-85px + 30px);
+  } 
+
+  @media (max-width: $breakpoint-sm) {
+    top: calc(-75px + 30px);
+  } 
+
+  @media (max-width: $breakpoint-xsm) {
+    left: 15px;
+    top: calc(-54px + 20px);
+  }   
+
+  &__link,
+  &__slash {
+    color: #fff;
+  }
+
+  &__link {
+    @include transition-colors;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 24px;
+
+    &:hover {
+      color: #FCC812!important;
+    }
+  }
+
+  &__slash {
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 8px;
+    user-select: none;
+
+    @media (max-width: $breakpoint-alternative-xsm) {
+      margin: 0 2px;
+    } 
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+
+    #{ $self }__link,
+    #{ $self }__slash {
+      color: $mainText;
+      position: relative;
+      z-index: 10;
+
+      @media (max-width: $breakpoint-sm) {
+        font-weight: 550;
+        font-size: 14px;
+        line-height: 24px;
+      }    
+    }
+
+    #{ $self }__link {
+      &:hover {
+        color: #CD2D21!important;
+      }
+    }
+  }
+
+  &--static {
+    position: static;
+  }
+}

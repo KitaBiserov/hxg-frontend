@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "title": "IT",
+      "image": "./assets/img/directions/server.png",
+      "desciption": "Our awsome text",
+      "link": "/it-equipment"
+    },
+    {
+      "id": 2,
+      "title": "ENERGY",
+      "image": "./assets/img/directions/energy.png",
+      "desciption": "Our awsome text",
+      "link": "/energy-equipment"
+    },
+    {
+     "id": 3,
+      "title": "CONSTRUCTION MASHINES",
+      "image": "./assets/img/directions/constructor.png",
+      "desciption": "Our awsome text",
+      "link": "/construction-machine"
+    },
+    {
+      "id": 4,
+      "title": "CONSUMER GOODS",
+      "image": "./assets/img/directions/consumer-goods.png",
+      "desciption": "Our awsome text",
+      "link": "/consumer-equipment"
+    }
+  ]

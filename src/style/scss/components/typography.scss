@@ -1,0 +1,129 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Components Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+
+// Components Typography
+.h1,
+.h2,
+.h3 {
+  font-weight: 700;  
+}
+
+.h1,
+.h2 {
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.h2,
+.h3 {
+  color: #000000;
+ 
+}
+
+.h1 {
+  color: $mainRed; 
+  font-size: 40px;
+ 
+
+  @media (max-width: $breakpoint-lg) {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }   
+  
+  @media (max-width: $breakpoint-xsm) {
+    font-size: 20px;
+    line-height: 30px;
+  } 
+}
+
+.h2 {
+  font-size: 44px;
+  
+  
+  @media (max-width: $breakpoint-lg) {
+    font-size: 36px;
+  }    
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 28px;
+    line-height: 40px;
+  } 
+  
+  @media (max-width: $breakpoint-sm) {
+    font-size: 24px;
+  }
+  
+  @media (max-width: $breakpoint-xsm) {
+    font-size: 20px;
+  } 
+}
+
+.h3 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.desc,
+.a,
+.p,
+.span,
+.strong {
+  font-weight: 400;  
+}
+
+.p,
+.span,
+.strong {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Century Gothic';
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+.a {
+  font-size: 15px;
+  line-height: 24px;
+  color: $mainText;
+	display: block;
+	text-decoration: none;
+	opacity: 1;
+	transition: opacity $timeTrans linear;
+	user-select: none;  
+}
+
+.desc {
+  font-size: 17px;
+  line-height: 26px;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: 16px;
+    line-height: 24px;
+  } 
+}
+
+.number {
+  display: block;
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 10px 0;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: 80px;
+    line-height: 80px;
+  }  
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 7px 0;
+  }    
+}

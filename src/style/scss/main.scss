@@ -1,0 +1,116 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- Imported Files -------------------------------
+//  ------------------------------------------------------------------------------
+
+@import "import/animate.scss";
+@import "import/normalize.scss";
+@import "components/variables";
+@import "components/mixins";
+@import "components/fonts";
+
+//  ------------------------------------------------------------------------------
+//  ----------------------------- Main Files -----------------------------------
+//  ------------------------------------------------------------------------------
+
+// BLOCK: TYPOGRAPHY
+@import "components/typography";
+
+// BLOCK: ICONS
+@import "components/blocks/icons";
+
+// BLOCK: GRID
+@import "components/blocks/grid";
+
+// BLOCK: SECTION
+@import "components/blocks/section";
+
+// BLOCK: SECTION PAGES
+@import "components/blocks/section-pages";
+
+// BLOCK: NAV PAGE
+@import "components/blocks/nav-page";
+
+// BLOCK: BOX CONTENT
+@import "components/blocks/box-content";
+
+// BLOCK: FORM
+@import "components/blocks/form";
+
+// BLOCK: FIXED
+@import "components/blocks/fixed";
+
+// BLOCK: MARKER
+@import "components/blocks/marker";
+
+// BLOCK: ARROWS
+@import "components/blocks/arrows";
+
+// BLOCK: BUTTONS
+@import "components/blocks/buttons/all";
+
+// BLOCK: INPUT
+@import "components/blocks/input";
+
+// BLOCK: CHECKBOX
+@import "components/blocks/checkbox";
+
+// BLOCK: WRAPPER TITLE
+@import "components/blocks/wrapper-title";
+
+// BLOCK: CARD
+@import "components/blocks/card";
+
+// BLOCK: LOGO
+@import "components/blocks/logo";
+
+// BLOCK: PROJECT
+@import "components/blocks/project";
+
+// BLOCK: SLIDER
+// @import "components/blocks/slider";
+
+// BLOCK: PRESETS
+@import "components/preset";
+
+// BLOCK: HEADER
+@import "components/blocks/header";
+
+// BLOCK: FEEDBACK
+@import "components/blocks/feedback";
+
+// BLOCK: FOOTER
+@import "components/blocks/footer";
+
+// BLOCK: MOBILE MENU
+@import "components/blocks/mobile-menu";
+
+// PAGE: Main
+@import "components/pages/main";
+
+// PAGE: About
+@import "components/pages/about";
+
+// PAGE: Projects
+@import "components/pages/projects";
+
+// PAGE: Contacts
+@import "components/pages/contacts";
+
+@import "components/blocks/slider-head";
+
+@import "components/blocks/persona.scss";
+
+@import "components/blocks/dropdown.scss";
+
+@import "components/blocks/ticker.scss";
+
+@import "components/pages/news";
+
+@import "./components/equipment.scss";
+
+@import "components/blocks/tabs.scss";
+@import "./components/pages/item.scss";
+@import "./components/pages/catalog.scss";
+
+
+@import "components/loader";

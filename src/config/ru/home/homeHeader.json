@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "C Новым годом!",
+    "description": "",
+    "image": "images/gifs/christmass.mp4",
+    "link": "/about",
+    "backgroundImage": "main",
+    "linkHidden": true
+  },
+   
+    {
+      "id": 2,
+      "title": "SHARQ ",
+      "description": "Новая серия серверов",
+      "image": "images/gifs/server.mp4",
+      "link": "/it-equipment",
+      "backgroundImage": "servers"
+    },
+    {
+      "id": 3,
+      "title": "Huaxun Group",
+      "description": "мы предлагаем лучшие решения для ваших целей",
+      "image": "images/gifs/main.mp4",
+      "link": "/about",
+      "backgroundImage": "main"
+    }
+
+  ]

@@ -1,0 +1,346 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+
+.sc-maps {
+  $self: &;
+
+
+  position: relative;
+  height: calc(100vh - 90px);
+  min-height: 760px;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint-md) {
+    min-height: unset;
+  }  
+  
+  @media (max-width: $breakpoint-sm) {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    height: auto;
+    
+    padding-bottom: 1100px;
+  }     
+
+  @media (max-width: $breakpoint-xsm) {
+    padding-bottom: 350px;
+  } 
+
+  &__maps-container {
+    position: absolute;
+    height: inherit;
+    min-height: inherit;
+    width: 100%;
+    top: 13%;
+    left: 0;
+    z-index: 0;
+
+   
+
+    @media (max-width: $breakpoint-sm) {
+      grid-row: 2;
+      max-height: 410px!important;
+      height: 410px!important;
+      min-height: 410px!important;
+    }  
+    
+    @media (max-width: $breakpoint-xsm) {
+      max-height: 350px!important;
+      height: 350px!important;
+      min-height: 350px!important;
+    } 
+  }
+
+  &__maps {
+    position: absolute;
+    height: inherit!important;
+    min-height: inherit!important;
+    width: inherit;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    @media (max-width: $breakpoint-sm) {
+      max-height: 410px!important;
+      height: 410px!important;
+      min-height: 410px!important;
+    }     
+
+    @media (max-width: $breakpoint-xsm) {
+      max-height: 350px!important;
+      height: 350px!important;
+      min-height: 350px!important;
+    } 
+  }
+
+  &__grid {
+    height: unset;
+    min-height: unset;
+    z-index: 999;
+
+    @media (max-width: $breakpoint-sm) {
+      grid-row: 1;
+    }     
+  }
+
+  &__wrapper {
+    display: block;
+    height: inherit;
+    min-height: inherit;
+    grid-template-rows: repeat(2, auto);
+    align-self: self-start;
+
+    @media (max-width: $breakpoint-sm) {
+      align-self: baseline;
+    }   
+  }
+
+  &__wrapper-page {
+    grid-column: span 4;
+    grid-row: 1;
+    position: relative;
+    top: 30px;
+    max-height: 44px;
+    border-radius: 6px;
+
+    @media (max-width: $breakpoint-lg) {
+      grid-column: span 5;
+    } 
+    
+    @media (max-width: $breakpoint-md) {
+      grid-column: span 6;
+    } 
+
+    @media (max-width: $breakpoint-sm) {
+      top: 20px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: $breakpoint-xsm) {
+      grid-column: span 2;
+      margin-bottom: 20px;
+    }      
+  }
+
+  &__nav-page {
+    @include fix-width;
+
+    @media (max-width: $breakpoint-sm) {
+      top: 0;
+    }
+
+    @media (max-width: $breakpoint-xsm) {
+      padding: 0;
+      margin-bottom: 20px;
+    }  
+  }
+
+  &__wrapper-nav {
+    grid-column: span 3;
+    grid-row: 2;
+    position: absolute;
+    top: 182px;
+    @include fix-height;
+
+    @media (max-width: $breakpoint-lg) {
+      grid-column: span 4;
+    }  
+    
+    @media (max-width: $breakpoint-md) {
+      grid-column: span 6;
+    }   
+    
+    @media (max-width: $breakpoint-sm) {
+      top: 0;
+      margin-bottom: calc(-62px + 19px);
+    }  
+
+    @media (max-width: 512px) {
+      margin-bottom: 0;
+      padding-bottom: 30px;
+    }     
+    
+    @media (max-width: $breakpoint-xsm) {
+      grid-column: span 2;
+    }    
+    @media (max-width: 414px) {
+      grid-column: span 2;
+      margin-top: 550px;
+    }    
+  }
+
+  &__nav-content {
+    background-color: #fff;
+    box-shadow: 0px 30px 30px -15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 100%;
+    padding: 35px 30px 40px;
+    @include fix-width;
+
+    @media (max-width: $breakpoint-sm) {
+      width: 100%;
+      padding: 0;
+      box-shadow: none;
+      background-color: transparent;
+    }  
+  }
+
+  &__info-question {
+    color: #9B9190;
+  }
+
+  &__info-answer {
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+
+    @media (max-width: $breakpoint-sm) {
+      font-size: 14px;
+      line-height: 16px;
+    } 
+
+    @media (max-width: 512px) {
+      font-size: 15px;
+      line-height: 20px;
+    }      
+  }
+
+  &__wrapper-icon {
+    margin-right: 15px;
+
+    @media (max-width: $breakpoint-sm) {
+      margin-right: 20px;
+    } 
+  }
+
+  &__icon {
+    &--phone {
+      #{ $self }__svg {
+        #{ $self }__path {
+          stroke: $mainYellow;
+        }
+      }
+    }
+  }
+
+  &__contact {
+    margin-bottom: 30px;
+    
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-top: 30px;
+      width: calc(100% - 50px);
+    }     
+    @media (max-width: 512px) {
+      grid-column: span 6;
+    }  
+    @media (max-width: $breakpoint-sm) {
+      border: 1px solid #E6E6E6;
+      border-radius: 4px;
+      flex-direction: row;
+      padding: 20px 15px;
+      height: 107px;
+      display: flex;
+      justify-content: space-between;
+    }  
+
+   
+
+    @media (max-width: $breakpoint-xsm) {
+      min-height: 88px;
+      height: auto;
+      grid-column: span 2;
+      margin-bottom: 0;
+
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }   
+  }
+
+  &__wrapper-info {
+    max-width: 225px;
+
+    @media (max-width: $breakpoint-sm) {
+      max-width: unset;
+      text-align: left;
+      margin-right: auto;
+    }
+  }
+
+  &__info-question {
+    @media (max-width: $breakpoint-sm) {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 512px) {
+      margin-bottom: 16px;
+    }      
+  }
+
+  &__wrapper-icon {
+    @media (max-width: $breakpoint-sm) {
+      margin-bottom: 0;
+    }      
+  }
+
+  &__wrapper-infoblock {
+
+    @media (max-width: $breakpoint-xr) {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      grid-template-rows: repeat(6, minmax(0, 1fr));
+      column-gap: 30px;
+      row-gap: 20px;
+    } 
+
+    @media (max-width: $breakpoint-sm) {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      column-gap: 30px;
+      row-gap: 20px;
+    } 
+    
+    @media (max-width: $breakpoint-xsm) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 0;
+      row-gap: 15px;
+    } 
+
+    @media (max-width: 414px) { 
+      column-gap: 0;
+      row-gap: 15px;
+    } 
+  }
+
+  &__wrapper-button {
+    width: 100%;
+    position: relative;
+
+    @media (max-width: $breakpoint-sm) {
+      @include flex-center;
+      top: 0;
+    }      
+  }
+
+  &__btn-phone {
+    max-width: 200px;
+    width: 100%;
+    min-height: 62px!important;
+    height: 62px!important;
+    max-height: 62px!important;
+
+    @media (max-width: $breakpoint-xsm) {
+      max-width: unset;
+    }  
+  }
+
+  
+}
+
+.Iframe{
+  border: 0px;
+}

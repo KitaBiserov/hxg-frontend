@@ -1,0 +1,55 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- Variables Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+// COLORS
+
+$mainRed: #bf1515;
+$mainLightRed: #fb0f11;
+$mainYellow: #ebebeb;
+$mainOrange: #4d5382;
+$mainGray: #ebebeb;
+$loaderColor: #bf1515;
+$mainRed: #bf1515;
+$mainBackground: #ffffff;
+$mainText: #565656;
+$white: #ebebeb;
+$testBlack: #11151c;
+
+$OuterBorder: 1px solid $mainYellow;
+$OuterBorderRadius: 26px;
+$InnerBorderRadius: 13px;
+$SecondBlack: #0c0c0c;
+$Black: #02020b;
+$lightGray: #ebebeb;
+$darkGray: #4d5382;
+$orangeAcent: #ffa630;
+$lightRed: #bf1515;
+$darkRed: #b80000;
+
+// Shadows
+
+$successGreen: #4e937a;
+$errorYellow: #f2bb05;
+
+// Shadows
+
+$SecondBlackShadow: rgba(12, 12, 12, 0.5);
+$BlackShadow: rgba(2, 2, 11, 0.5);
+
+// Animation
+
+$timeTrans: 0.3s;
+
+// BREAKPOINTS
+$breakpoint-xxl: 1920px;
+$breakpoint-xl: 1440px;
+$breakpoint-l: 1280px;
+$breakpoint-lg: 992px;
+$breakpoint-xpad: 810px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+$breakpoint-xr: 414px;
+$breakpoint-xs: 375px;
+$breakpoint-xsm: 320px;
+$breakpoint-alternative-xsm: 300px;

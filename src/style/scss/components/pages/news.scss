@@ -1,0 +1,134 @@
+@import '../variables.scss';
+
+
+.sc-press-center{
+
+    &__main-page-box{
+        flex-grow: 1;
+    }
+
+    &__main-page-item-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        
+        img{
+            width: 200px;
+            height: 150px;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        p{
+            text-align: left;
+            margin: 10px 10px;
+        }
+
+    }
+
+    &__link{
+        text-align: right;
+        
+    }
+    
+    
+    &__page{
+        &__search-bar{
+            width: '100%';
+                
+                border: '0px';
+                border-radius: '5px';
+                padding: 10px 0 10px;
+                
+        }
+
+        &__grid{
+            display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: repeat(2, 1fr), 
+
+        }
+
+        &__item{
+        
+            margin-top: 50px;
+            width: 100%;
+            border: 1px solid red;
+            border-radius: 5px;
+            height: 350px;
+            background-color: rgba(255, 255, 255, 0.5);
+        img{
+            display: inline-flex;
+            width: 500px;
+            margin: 10px 10px
+        }
+
+            &__title{
+                display: inline-flex;  
+            }
+        h1{
+            margin: 20px 20px;
+      font-family: 'HelveticaNeueCyr';
+      font-size: 22px;
+      color: $Black;
+            
+        }
+        dateblock{
+            margin: 20px 20px;
+            font-family: 'HelveticaNeueCyr';
+            font-size: 22px;
+            color: $Black;    
+           
+            }
+        }
+        &__items-grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr; 
+        }
+
+        &__categories{
+            ul{
+                margin: 20px;
+                display: inline-flex;
+                @media (max-width: $breakpoint-xr) {
+                
+                    overflow: visible;
+                }
+            }
+            li{
+                margin-left: 100px;
+                @media (max-width: $breakpoint-xr) {
+                    margin-left: 20px;
+                }
+            }
+            label{
+                
+                color: $darkGray;
+                font-family: 'HelveticaNeueCyr';
+                font-size: 18px;
+                padding: 10px 20px 10px 20px;
+                border: 1px solid $mainRed;
+                border-radius: 35px;
+                background-color: $Black;
+            }
+
+            &__sort-block{
+                margin-left: 100px;
+                font-size: 18px;
+                
+                &__sorting{
+
+
+                    border-radius: 35px;
+                }
+            }
+        }
+        
+    }
+    
+   
+
+}

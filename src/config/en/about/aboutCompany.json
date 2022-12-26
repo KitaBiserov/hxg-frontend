@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "title": "Huaxun Group Limited",
+        "list": [
+            "Partner network support outside the Russian Federation",
+            "Competence in technical support of solutions from Chinese manufacturers",
+            "Embedded software solutions",
+            "Application Software",
+            "Software development/integration",
+            "Russian documentary support",
+            "Block of preparation of solutions for localization of production in the Russian Federation",
+            "Solving logistics problems",
+            "Financial Unit",
+            "Foreign Economic Department",
+            "Customer Technical Support Department"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "LLC Huaxun Group Ru",
+        "list": [
+            "Pre-sale engineering training",
+            "Sales Department",
+            "Project Management Department",
+            "Technical Support Department",
+            "Logistics and Delivery Department, Warehouse Management",
+            "Warranty Support and Service Department"
+        ]
+    }
+]

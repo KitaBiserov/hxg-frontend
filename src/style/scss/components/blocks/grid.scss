@@ -1,0 +1,52 @@
+/* Компонент: Сетка ( SCSS ) */
+.grid {
+  max-width: 1230px;
+  margin: 0 -15px;
+  width: calc(100% - 30px);
+  position: relative;
+  left: 50%;
+  transform: translateX(calc(-50% + 15px));
+
+  @media (max-width: $breakpoint-lg) {
+    max-width: 930px;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    max-width: 690px;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    max-width: 510px;
+  }
+
+  @media (max-width: $breakpoint-xsm) {
+    max-width: unset;
+    left: unset;
+    transform: unset;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+
+    @media (max-width: $breakpoint-sm) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @media (max-width: $breakpoint-xr) {
+      display: block;
+    }
+    @media (max-width: $breakpoint-xsm) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+.grid-gap {
+  padding: 0 15px;
+}

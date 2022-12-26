@@ -1,0 +1,61 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+
+.wrapper-title {
+  text-align: center;
+  
+  @media (max-width: $breakpoint-lg) {
+    margin-bottom: 50px;
+  }  
+  
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 40px;
+  }     
+
+  @media (max-width: $breakpoint-sm) {
+    margin-bottom: 21px;
+  }   
+
+  @media (max-width: $breakpoint-xsm) {
+    margin-bottom: 30px;
+  }     
+
+  &__title {
+    margin-bottom: 20px;
+    &__light{
+      color: $white;
+      
+    }
+    @media (max-width: $breakpoint-lg) {
+      margin-bottom: 10px;
+    }  
+    
+    @media (max-width: $breakpoint-sm) {
+      margin-bottom: 5px;
+    }    
+  }
+
+  &__desc {
+    display: inline-block;
+    max-width: 963px;
+    margin: 0 auto 50px;
+
+    @media (max-width: $breakpoint-lg) {
+      max-width: 929px;
+    }  
+
+    @media (max-width: $breakpoint-md) {
+      max-width: 690px;
+    } 
+    
+    @media (max-width: $breakpoint-sm) {
+      max-width: 510px;
+    }
+
+    @media (max-width: $breakpoint-xsm) {
+      max-width: unset;
+    }
+  }
+}

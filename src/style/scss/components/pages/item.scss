@@ -1,0 +1,112 @@
+.sc-item {
+  padding-top: 75px;
+  align-items: center;
+  
+
+  img {
+    align-items: center;
+    width: auto;
+    height: 400px;
+  }
+  &__head {
+    position: absolute;
+    top: 0px;
+  }
+  h1 {
+    margin: 20px 0px 20px;
+    text-align: center;
+
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+  label {
+    font-family: "Century Gothic";
+    font-size: 1rem;
+    line-height: 2;
+  }
+  &__grid {
+    @media (max-width: $breakpoint-lg) {
+      display: none;
+    }
+   
+
+    grid-template-rows: repeat(1fr, repeat);
+    row-gap: 30px;
+  }
+  &__info {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    &--image {
+      margin-left: 100px;
+      margin-right: 250px !important;
+      height: 400px;
+      width: 500px;
+      align-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: $InnerBorderRadius;
+      background-color: $white;
+    }
+  }
+  &__info-block {
+    width: 300px;
+    max-height: 600px;
+    margin: 0 auto;
+    span {
+        cursor: pointer;
+        padding-right: 50px;
+        font-size: 1rem;
+        color: $mainRed;
+        &::before {
+          color: $mainRed;
+          align-items: center;
+          content: "...";
+          font-size: 1rem;
+          line-height: 1rem;
+        }
+      }
+    background-color: $white;
+    border-radius: $OuterBorderRadius;
+    &--box {
+      margin: 10px 10px 10px 10px;
+     
+    }
+    &--row {
+      display: flex;
+      margin: 10px 10px;
+      justify-content: space-between;
+    }
+  }
+  &__download-link {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+
+    a {
+      color: $mainRed;
+      border-bottom: 1p dotted $mainRed;
+      font-family: "Century Gothic";
+    }
+  }
+
+  liner {
+    border-bottom: 2px solid $mainRed;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-duration: 1ms;
+  }
+
+  &__tab-box {
+    margin: 0 auto;
+  }
+
+  &__slider {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    height: auto;
+  }
+}

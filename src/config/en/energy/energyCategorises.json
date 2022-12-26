@@ -1,0 +1,181 @@
+
+
+{
+  "list": [
+    {
+      "id": 1,
+      "title": "All",
+      "extentions": []
+    },
+    {
+      "id": 2,
+      "title": "Diesel Generators",
+      "extentions": [
+        {
+          "title": "vendor",
+          "options": [
+            {
+              "value": "dell",
+              "label": "DELL"
+            },
+            {
+              "value": "sharq",
+              "label": "SharQ"
+            }
+          ]
+        },
+        {
+          "title": "formfactor",
+          "options": [
+            { "label": "1U", "value": "1U" },
+            {
+              "label": "2U",
+              "value": "2U"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Gas-piston power plants",
+      "extentions": [
+        { "title": "vendor", "options": [{ "label": "H3C", "value": "H3C" }] },
+        {
+          "title": "Switch",
+          "options": [
+            { "label": "2L", "value": "2L" },
+            { "label": "3L", "value": "3L" }
+          ]
+        },
+        {
+          "title": "Router",
+          "options": [{ "label": "Gateway", "value": "Gateway" }]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Marine Engines",
+      "extentions": [
+        {
+          "title": "Vendor",
+          "options": [
+            {
+              "label": "Huawei",
+              "value": "Huawei"
+            }
+          ]
+        },
+        {
+          "title": "Formfactor",
+          "options": [
+            {
+              "label": "2U",
+              "value": "2U"
+            },
+            {
+              "label": "3U",
+              "value": "3U"
+            }
+          ]
+        },
+        {
+          "title": "Capacity",
+          "options": [
+            {
+              "label": "Up to 100TB",
+              "value": "Up to 10TB"
+            },
+            {
+              "label": "Up to 10TB",
+              "value": "Up to 10TB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Switchgears",
+      "extentions": [
+        {
+          "title": "Vendor",
+          "options": [
+            {
+              "label": "Huawei",
+              "value": "Huawei"
+            }
+          ]
+        },
+        {
+          "title": "Formfactor",
+          "options": [
+            {
+              "label": "2U",
+              "value": "2U"
+            },
+            {
+              "label": "3U",
+              "value": "3U"
+            }
+          ]
+        },
+        {
+          "title": "Capacity",
+          "options": [
+            {
+              "label": "Up to 100TB",
+              "value": "Up to 10TB"
+            },
+            {
+              "label": "Up to 10TB",
+              "value": "Up to 10TB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "UPS",
+      "extentions": [
+        {
+          "title": "Vendor",
+          "options": [
+            {
+              "label": "Huawei",
+              "value": "Huawei"
+            }
+          ]
+        },
+        {
+          "title": "Formfactor",
+          "options": [
+            {
+              "label": "2U",
+              "value": "2U"
+            },
+            {
+              "label": "3U",
+              "value": "3U"
+            }
+          ]
+        },
+        {
+          "title": "Capacity",
+          "options": [
+            {
+              "label": "Up to 100TB",
+              "value": "Up to 10TB"
+            },
+            {
+              "label": "Up to 10TB",
+              "value": "Up to 10TB"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

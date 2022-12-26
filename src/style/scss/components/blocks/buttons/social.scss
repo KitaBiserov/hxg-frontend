@@ -1,0 +1,28 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+
+// Components: SOCIAL BUTTON
+.social {
+  $self: &;
+
+  @include flex-center;
+  @include transition-colors;
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  min-height: 42px;
+  border-radius: 4px;
+  background-color: $mainYellow;
+
+  &:hover {
+    background-color: $mainLightRed;
+
+    #{ $self }__svg {
+      #{ $self }__path {
+        fill: #fff;
+      }
+    }
+  }
+}

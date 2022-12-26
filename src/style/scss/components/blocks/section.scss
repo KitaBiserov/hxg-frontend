@@ -1,0 +1,27 @@
+//  ------------------------------------------------------------------------------
+//  ----------------------------- CSS Files ------------------------------
+//  ------------------------------------------------------------------------------
+
+
+.section {
+ // margin: 80px 0 140px 0;
+ 
+  @media (max-width: $breakpoint-lg) {
+    margin: 60px 0 70px 0;
+    
+  }  
+
+  @media (max-width: $breakpoint-md) {
+    margin: 0px 0 50px 0;
+  }  
+  @media (max-width: $breakpoint-xr) {
+    margin-top: 0px!important;
+  } 
+  @media (max-width: $breakpoint-sm) {
+    margin: 40px 0 40px 0;
+  }  
+
+  @media (max-width: $breakpoint-xsm) {
+    margin: 30px 0 30px 0;
+  }  
+}
