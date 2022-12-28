@@ -4,7 +4,7 @@ import NavigationBar from './NavigationBar'
 export const Header = () => {
 	return (
 		<>
-			<NavigationBar theme="a header__link-black" />
+			<NavigationBar theme="a header__link" />
 		</>
 	)
 }

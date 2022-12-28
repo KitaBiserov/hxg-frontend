@@ -16,10 +16,15 @@ const themeGlobal = createTheme({
 		fontFamily: ['HelveticaNueCyr', 'Century Gothic'].join('.'),
 	},
 	components: {
+		MuiTab: {
+			styleOverrides:{
+
+			}
+		},
 		MuiModal: {
 			styleOverrides: {
 				root: {
-					zIndex: 9999,
+					zIndex: 999999,
 				},
 			},
 		},
@@ -36,13 +41,12 @@ const themeGlobal = createTheme({
 			styleOverrides: `
      @font-face {
       font-family: "HelveticaNeueCyr";
-      src: url("../fonts/HelveticaNeueCyr-Medium.woff");
-      font-weight: 550;
-      font-style: normal;
+      src: url("fonts/HelveticaNeueCyr-Medium.ttf");
+      
    };
    @font-face {
     font-family: "Century Gothic";
-    src: url("../fonts/GOTHIC.TTF");
+    src: url("fonts/GOTHIC.TTF");
  };
     `,
 		},

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, MouseEventHandler } from 'react'
+import * as React from 'react'
 import Catalog, { catalogItemInfo } from '../components/Catalog/Catalog'
 import { HeaderVideoComponent } from '../components/HeaderVideoComponent'
 import { CatalogSceleton } from '../components/Catalog/Sceleton'
@@ -7,36 +7,17 @@ import config from '../config/ru/config'
 import { Outlet } from 'react-router-dom'
 import { useMediaQuery } from 'react-responsive'
 import InfoModal from '../utils/infoModal'
-import { NetworkStatus, useQuery } from '@apollo/client'
-import { GET_ALL_IT_EQUIPMENT } from '../apollo/queries/queries'
+import { getCatalogItem, CatalogItem } from '../../api/index'
 
 export const EquipmentIT = () => {
 	const equipmentPrefix = 'https://62c3fa7eabea8c085a67f486.mockapi.io/it'
 	const routerURL = '/it-equipment'
-	const [categoryId, setCategoryId] = useState(1)
-	const [URL, setURL] = useState('')
-
-	const { loading, error, data, refetch, networkStatus } = useQuery(
-		GET_ALL_IT_EQUIPMENT,
-		{
-			variables: { categoryId },
-			pollInterval: 500,
-			fetchPolicy: 'network-only',
-			nextFetchPolicy: 'cache-first',
-		}
-	)
-
+	const [isLoading, setIsLoading] = React.useState(false)
+	const [categoryId, setCategoryId] = React.useState(1)
+	const [URL, setURL] = React.useState('')
+	const [data, setData] = React.useState<catalogItemInfo[]>([])
 	const handleClickCategory = (id: number) => {
 		setCategoryId(id)
-		refetch({ categoryId: categoryId })
-	}
-
-	const handleRefetch = () => (event: MouseEvent) => {
-		event.preventDefault()
-		if (networkStatus === NetworkStatus.refetch)
-			return console.log('Refetching')
-		refetch({ categoryId: categoryId })
-		console.log(error)
 	}
 
 	const isMobileScreen = useMediaQuery({
@@ -44,10 +25,16 @@ export const EquipmentIT = () => {
 	})
 
 	const UrlSource = 'it'
-	useEffect(() => {
+	React.useEffect(() => {
 		setURL(UrlSource)
 	}, [URL])
-	console.log(data, loading, error)
+
+	React.useEffect(() => {
+		getCatalogItem(categoryId, UrlSource).then((response) =>
+			setData(response)
+		)
+	}, [categoryId])
+
 	const backgroundImage = 'server'
 
 	return (
@@ -59,8 +46,6 @@ export const EquipmentIT = () => {
 				content={config.itPage.itHeaderContent}
 			/>
 			<div className="grid">
-			
-
 				<div className="sc-catalog">
 					{isMobileScreen === false ? (
 						<div className="sc-catalog__catalog-grid">
@@ -73,7 +58,7 @@ export const EquipmentIT = () => {
 							</div>
 							<div className="sc-catalog__catalog-grid-sub">
 								<div className="sc-catalog__equipment-grid">
-									{loading || data == undefined
+									{data === undefined
 										? [...new Array(6)].map(
 												(obj, index) => (
 													<CatalogSceleton
@@ -82,22 +67,20 @@ export const EquipmentIT = () => {
 													/>
 												)
 										  )
-										: data.getItEquipment.map(
-												(obj: catalogItemInfo) => (
-													<Catalog
-														routerURL={routerURL}
-														key={obj.id}
-														id={obj.id}
-														title={obj.model}
-														vendor={obj.vendor}
-														description={
-															obj.description
-														}
-														img={obj.image}
-														source={URL}
-													/>
-												)
-										  )}
+										: data.map((obj: catalogItemInfo) => (
+												<Catalog
+													routerURL={routerURL}
+													key={obj.id}
+													id={obj.id}
+													title={obj.model}
+													vendor={obj.vendor}
+													description={
+														obj.description
+													}
+													img={obj.image}
+													source={URL}
+												/>
+										  ))}
 								</div>
 							</div>
 						</div>
@@ -112,7 +95,7 @@ export const EquipmentIT = () => {
 							</div>
 							<div className="sc-catalog__catalog-grid-sub">
 								<div className="sc-catalog__equipment-grid--mob">
-									{loading || data === undefined
+									{data === undefined
 										? [...new Array(6)].map(
 												(obj, index) => (
 													<CatalogSceleton
@@ -121,22 +104,20 @@ export const EquipmentIT = () => {
 													/>
 												)
 										  )
-										: data.getItEquipment.map(
-												(obj: catalogItemInfo) => (
-													<Catalog
-														routerURL={routerURL}
-														source={URL}
-														key={obj.id}
-														title={obj.model}
-														description={
-															obj.description
-														}
-														img={obj.image}
-														id={obj.id}
-														vendor={obj.vendor}
-													/>
-												)
-										  )}
+										: data.map((obj: catalogItemInfo) => (
+												<Catalog
+													routerURL={routerURL}
+													source={URL}
+													key={obj.id}
+													title={obj.model}
+													description={
+														obj.description
+													}
+													img={obj.image}
+													id={obj.id}
+													vendor={obj.vendor}
+												/>
+										  ))}
 								</div>
 							</div>
 						</div>
@@ -144,6 +125,7 @@ export const EquipmentIT = () => {
 				</div>
 			</div>
 			<Outlet />
+			<InfoModal />
 		</>
 	)
 }

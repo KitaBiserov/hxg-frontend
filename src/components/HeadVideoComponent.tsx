@@ -2,9 +2,7 @@ import React from 'react'
 import Carousel from 'nuka-carousel'
 import Button from '@mui/material/Button'
 import ArrowForwardIosTwoToneIcon from '@mui/icons-material/ArrowForwardIosTwoTone'
-import NavigationBar from './NavigationBar'
-import { Link } from 'react-router-dom'
-import { useMediaQuery } from 'react-responsive'
+
 
 export interface HeaderContent {
 	id: number
@@ -21,15 +19,7 @@ interface HeadVideoComponentProps {
 	theme: string
 }
 
-function HeadVideoComponent({ content, theme }: HeadVideoComponentProps) {
-	const isMobileScreen = useMediaQuery({
-		query: '(max-width: 576px)',
-	})
-
-	const getResponsiveBackgroud = () => {
-		return isMobileScreen === true ? 'mobile' : 'desktop'
-	}
-
+function HeadVideoComponent({ content }: HeadVideoComponentProps) {
 	return (
 		<>
 			<section className="sc-main">
@@ -39,19 +29,21 @@ function HeadVideoComponent({ content, theme }: HeadVideoComponentProps) {
 						nextButtonText: ' ',
 						nextButtonStyle: {
 							backgroundColor: 'transparent',
-							width: '50px',
-							height: '50px',
+							width: '100px',
+							height: '100px',
 							background: 'no-repeat',
 							backgroundSize: '100%',
-							backgroundImage: `url("images/service/arrow-white.png")`,
+							// eslint-disable-next-line quotes
+							backgroundImage: `url('assets/images/service/arrow-white.png')`,
 						},
 						prevButtonStyle: {
 							backgroundColor: 'transparent',
 							rotate: '180deg',
-							width: '50px',
-							height: '50px',
+							width: '100px',
+							height: '100px',
 							backgroundSize: '100%',
-							backgroundImage: `url("images/service/arrow-white.png")`,
+							// eslint-disable-next-line quotes
+							backgroundImage: `url('assets/images/service/arrow-white.png')`,
 						},
 						pagingDotsStyle: {
 							display: 'none',
@@ -60,7 +52,7 @@ function HeadVideoComponent({ content, theme }: HeadVideoComponentProps) {
 					withoutControls={false}
 					autoplay={true}
 					enableKeyboardControls={true}
-					autoplayInterval={5000}
+					autoplayInterval={20000}
 				>
 					{content.map((obj, idx) => {
 						return (

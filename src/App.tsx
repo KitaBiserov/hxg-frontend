@@ -3,7 +3,7 @@ import React, { useState, useEffect, lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Home } from './pages/Home'
 import Footer from './components/Footer'
-import Loader from './utils/loader'
+import { WinterLoader } from './style/winter-pack/WinterLoader'
 import Item from './pages/Item'
 import { Header } from './components/Header'
 import { ThemeProvider } from '@mui/material/styles'
@@ -21,11 +21,13 @@ const EnergyEquipment = lazy(() => import('./pages/EnergyEquipment'))
 const EquipmentIT = lazy(() => import('./pages/EquipmentIT'))
 const ConsumerEquipment = lazy(() => import('./pages/ConsumerEquipment'))
 const ConstructionMachine = lazy(() => import('./pages/ConstructionMachine'))
+
+
 export function App() {
 	const [loaded, setLoaded] = useState(false)
 
 	useEffect(() => {
-		setTimeout(() => setLoaded(true), 3000)
+		setTimeout(() => setLoaded(true), 4000)
 	}, [])
 
 	return (
@@ -34,7 +36,7 @@ export function App() {
 				<WinterLoyout>
 					<div className="App">
 						{!loaded ? (
-							<Loader />
+							<WinterLoader />
 						) : (
 							<BrowserRouter>
 								<Header />
@@ -42,7 +44,7 @@ export function App() {
 									<Route
 										path="*"
 										element={
-											<Suspense fallback={<Loader />}>
+											<Suspense fallback={<WinterLoader />}>
 												<ErrorPage />
 											</Suspense>
 										}
@@ -52,7 +54,7 @@ export function App() {
 									<Route
 										path="/contacts"
 										element={
-											<Suspense fallback={<Loader />}>
+											<Suspense fallback={<WinterLoader/>}>
 												<Contacts />
 											</Suspense>
 										}
@@ -60,7 +62,7 @@ export function App() {
 									<Route
 										path="/about"
 										element={
-											<Suspense fallback={<Loader />}>
+											<Suspense fallback={<WinterLoader />}>
 												<About />
 											</Suspense>
 										}
@@ -68,7 +70,7 @@ export function App() {
 									<Route
 										path="/construction-machine"
 										element={
-											<Suspense fallback={<Loader />}>
+											<Suspense fallback={<WinterLoader />}>
 												<ConstructionMachine />
 											</Suspense>
 										}
@@ -94,7 +96,7 @@ export function App() {
 									<Route
 										path="/it-equipment"
 										element={
-											<Suspense fallback={<Loader />}>
+											<Suspense fallback={<WinterLoader />}>
 												<EquipmentIT />
 											</Suspense>
 										}
@@ -102,7 +104,7 @@ export function App() {
 									<Route
 										path="/energy-equipment"
 										element={
-											<Suspense fallback={<Loader />}>
+											<Suspense fallback={<WinterLoader />}>
 												<EnergyEquipment />
 											</Suspense>
 										}
@@ -110,7 +112,7 @@ export function App() {
 									<Route
 										path="/vacancy"
 										element={
-											<Suspense fallback={<Loader />}>
+											<Suspense fallback={<WinterLoader />}>
 												<Vacancy />
 											</Suspense>
 										}
@@ -118,7 +120,7 @@ export function App() {
 									<Route
 										path="/consumer-equipment"
 										element={
-											<Suspense fallback={<Loader />}>
+											<Suspense fallback={<WinterLoader />}>
 												<ConsumerEquipment />
 											</Suspense>
 										}

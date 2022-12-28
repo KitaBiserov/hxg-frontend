@@ -162,13 +162,13 @@
     transition: background-color 0.1s ease-in-out;
    
 }
-.active {
+/*.active {
   animation: balloon 15s infinite linear;
   transform:  scale(1);
   box-shadow:  0 13px 27px -5px rgba(50,50,93,0.25), 0 0 10px 5px rgba(255, 0, 0, 0.3);
   filter: drop-shadow(10px 10px 200px #bf1515) drop-shadow(-10px -10px 50px  #FFA630);
   
-}
+}*/
 .selector-active{
     display: block;
 }

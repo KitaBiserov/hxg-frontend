@@ -24,11 +24,9 @@ const TickerBlock = () => {
 					repeat: Infinity,
 					repeatType: 'loop',
 					ease: 'linear',
-					duration: 32,
+					duration: 45,
 				}}
-				whileHover={{
-					transitionDuration: '0s',
-				}}
+				
 				animate={{
 					translateX: -3200,
 				}}
@@ -40,11 +38,11 @@ const TickerBlock = () => {
 				}}
 			>
 				{config.homePage.tickerItems.items.map((obj) => (
-					<li key={obj.id} style={{ margin: '100px' }}>
+					<li key={obj.id}  className="ticker-item">
 						<a title={obj.link} href={obj.link}>
 							{' '}
 							<img
-								style={{ width: '100px' }}
+								
 								src={obj.img}
 								alt={obj.link}
 							/>

@@ -28,6 +28,30 @@ export const WinterLoyout = ({ children }: { children: React.ReactNode }) => {
 			<div className="snowflake"></div>
 			<div className="snowflake"></div>
 			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
+			<div className="snowflake"></div>
 			{children}
 		</section>
 	)

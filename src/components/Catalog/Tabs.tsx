@@ -62,7 +62,7 @@ function ItemTabs({
 				<TabPanel>
 					<Box>
 						<Typography>
-							{datasheet != '' ? (
+							{/* datasheet === '' ? (
 								<div className="sc-items__download-link">
 									<svg
 										width="50px"
@@ -82,7 +82,7 @@ function ItemTabs({
 								</div>
 							) : (
 								<></>
-							)}
+							)*/}
 						</Typography>
 					</Box>
 				</TabPanel>

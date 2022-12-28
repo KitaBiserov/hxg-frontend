@@ -3,8 +3,8 @@ import { useMediaQuery } from 'react-responsive'
 import { Link } from 'react-router-dom'
 import config from '../config/ru/config'
 import Accordion from '../utils/accordion'
-import logo from '../../images/logo/logo.svg'
-import service from '../../images/service/service.svg'
+import logo from '../../assets/images/logo/logo.svg'
+import service from '../../assets/images/service/service-white.svg'
 
 function Footer() {
 	const isMobileScreen = useMediaQuery({
@@ -222,15 +222,14 @@ function Footer() {
 							<div className="footer__wrapper-icon">
 								<i className="icon icon--marker">
 									<svg
-									
 										version="1.1"
 										className="icon__svg"
-										viewBox="0 0 24 24"
-										
 										xmlns="http://www.w3.org/2000/svg"
 									>
-										
-										<image className="icon__svg"  xlinkHref={service}/>
+										<image
+											className="icon__svg"
+											xlinkHref={service}
+										/>
 									</svg>
 								</i>
 							</div>

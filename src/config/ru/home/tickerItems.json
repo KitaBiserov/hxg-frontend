@@ -8,43 +8,43 @@
     },
     {
         "id": 2,
-        "img": "./assets/img/partners/huawei.svg",
+        "img": "images/partners/huawei.svg",
         "link": "https://www.huawei.com/"
     },
     {
         "id": 3,
-        "img": "./assets/img/partners/dahua.png",
+        "img": "images/partners/dahua.png",
         "link": "https://www.dahuasecurity.com/ru/"
     },
     {
         "id": 4,
-        "img": "./assets/img/partners/unv.png",
+        "img": "assets/images/partners/unv.png",
         "link": "https://global.uniview.com/"
     },
     {
         "id": 5,
-        "img": "./assets/img/partners/sany.svg",
+        "img": "images/partners/sany.svg",
         "link": "https://www.sanyglobal.com/"
     },
     {
         "id": 6,
-        "img": "./assets/img/partners/weichai.jpg",
+        "img": "images/partners/weichai.png",
         "link": "https://www.weichai.com/"
     },
     {
         "id": 7,
-        "img": "./assets/img/partners/jichai.png",
+        "img": "images/partners/jichai.png",
         "link": "https://www.jichai.com/"
     },
 
     {
         "id": 9,
-        "img": "./assets/img/partners/dell.png",
+        "img": "images/partners/dell.png",
         "link": "https://www.dell.com/"
     },
     {
         "id": 10,
-        "img": "./assets/img/partners/sharq.png",
+        "img": "images/partners/sharq.png",
         "link": "https://www.sharq-server.com/"
     }
   ]}

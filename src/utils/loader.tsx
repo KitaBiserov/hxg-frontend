@@ -15,12 +15,11 @@ function Loader() {
 						duration: 0.8,
 					}}
 					animate={{
-						scale: [0, 1],
+						translateY: [-20, 20],
 					}}
 				>
 					<image className="image" xlinkHref={logoBall} />
 				</motion.svg>
-				<SantaModel />
 			</div>
 		</div>
 	)

@@ -1,7 +1,6 @@
 import React from 'react'
 import Carousel from 'nuka-carousel'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { url } from 'inspector'
+
 import { useMediaQuery } from 'react-responsive'
 
 interface PersonaSliderConent {
@@ -28,29 +27,20 @@ function SliderComponent({ content }: PersonaSliderProps) {
 					prevButtonText: ' ',
 					nextButtonText: ' ',
 					nextButtonStyle: {
-						backgroundColor: 'transparent',
-						width: '50px',
-						height: '50px',
-						background: 'no-repeat',
-						backgroundSize: '100%',
-						backgroundImage: `url("./assets/img/service/arrow.png")`,
+						display: 'none',
 					},
 					prevButtonStyle: {
-						backgroundColor: 'transparent',
-						rotate: '180deg',
-						width: '50px',
-						height: '50px',
-						backgroundSize: '100%',
-						backgroundImage: `url("./assets/img/service/arrow.png")`,
+						display: 'none',
 					},
 					pagingDotsStyle: {
-						display: 'none',
+						display: 'block',
+						marginLeft: '20px',
 					},
 				}}
 				withoutControls={false}
 				autoplay={true}
 				enableKeyboardControls={false}
-				autoplayInterval={5000}
+				autoplayInterval={15000}
 			>
 				{content.map((obj) => (
 					<div

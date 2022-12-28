@@ -63,7 +63,8 @@ function MobileMenu() {
 
 const MobileMenuItem = styled(Modal)`
 	&-content {
-		width: 100%;
+		z-index: 999990;
+		width: 75%;
 		height: 100% !important;
 	}
 	&-overlay {
@@ -80,7 +81,7 @@ const CloseButton = styled(Button)`
 		top: 3%;
 		left: 50%;
 		transform: translateX(-50%) !important;
-		z-index: 9999;
+		z-index: 999990;
 	}
 `
 

@@ -1,44 +1,42 @@
 .winter-screen {
 	position: absolute;
-	z-index: 99999;
+	z-index: 999999;
 
 	width: 100%;
 	height: 100%;
 	.snowflake {
         font-size:  xx-large;
 		z-index: 99999999;
-		position: fixed; // [1] Break the layout flow
-		color: white; // [2] Set the color for the snowflake
+		position: fixed; 
+		color: white; 
 		&:after {
 		
-			content: '\2744'; // [3] Give it some shape
+			content: '\2744';
 		}
 	}
 	$snowflakes: 250;
 
-	// Randomize the animation and positioning for each snowflake
+	
 	@for $i from 1 through $snowflakes {
-		// Position of the snowflake on the y-axis
+		
 		$top: (random(50) + 50) * 1%;
 
-		// Position of the snowflake on the x-axis
 		$left: random(100) * 1%;
 
-		// Animation delay for the flake
+	
 		$delay: random(20) - 1s;
 
-		// Floating span for the flake
+
 		$duration: random(6) + 5s;
 
-		// Size of the flake
+
 		$size: random(24);
 
-		/* Snowflake ##{$i} */
+
 		.snowflake:nth-of-type(#{$i}) {
 			animation-name: snowflake-#{$i};
 			animation-delay: $delay;
 
-			// Play the animation for anything between 5-10 seconds
 			animation-duration: $duration;
 			animation-iteration-count: infinite;
 			left: $left;
@@ -48,7 +46,7 @@
 			}
 		}
 
-		// Animation for snowflake ##{$i}
+
 		@keyframes snowflake-#{$i} {
 			0% {
 				transform: rotate(0deg);
@@ -74,4 +72,44 @@
 			}
 		}
 	}
+
+	
+}
+
+.winter-footer {
+	overflow-x: hidden;
+	position: fixed;
+	top: 0%;
+	
+	z-index: 99999;
+	width: 100%;
+	
+	display: flex;
+	ul {
+		display: flex;
+	
+		::before {
+			width: 100px;
+			color: antiquewhite;
+			stroke: azure;
+			background-color: aqua;
+			content: url('./assets/images/svg/decoration.svg');
+			
+		}
+		::after {
+			width: 100px;
+			rotate: 360deg;
+			content: url('./assets/images/svg/decoration.svg');
+			
+		}
+	}
+	li{
+		display: flex;
+	}
+
+	
+	span{
+		display: none;
+	}
+
 }

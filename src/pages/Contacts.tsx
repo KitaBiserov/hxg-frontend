@@ -7,7 +7,6 @@ export const Contacts = () => {
 	const [isOpen] = React.useState(false)
 	return (
 		<section className="sc-maps" id="sc-maps">
-			<NavigationBar theme={'a header__link-black'} />
 			<div className="sc-maps__maps-container">
 				<Iframe
 					url="https://yandex.ru/map-widget/v1/?um=constructor%3Ae7cee8f191666eb94f5b74b44c31aeec6375d43034b91c9868c8b099ac3383fd&amp;source=constructor"

@@ -14,7 +14,7 @@ export const Home = () => {
 	return (
 		<>
 			<HeadVideoComponent
-				theme={'a header__link white'}
+				theme={'a header__link '}
 				content={config.homePage.homeHeader}
 			/>
 
@@ -28,6 +28,7 @@ export const Home = () => {
 
 			<section
 				style={{
+					zIndex: 0,
 					position: 'relative',
 				}}
 				className="sc-numbers"

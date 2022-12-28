@@ -236,6 +236,10 @@
       @media (max-width:$breakpoint-md) {
           background-color: transparent;
       }
+      @media (max-width:$breakpoint-xs) {
+        background-color: transparent;
+        top: -3%;
+    }
     }
   }
 

@@ -8,8 +8,7 @@ import config from '../config/ru/config'
 import { FeedbackModal } from './FeedbackModal'
 import LanguageMenu from './LanguageMenu'
 
-import logo from '../../images/logo/logo-winter.svg'
-import { useScroll } from 'framer-motion'
+import logo from '../../assets/images/logo/logo-winter.svg'
 
 export interface Extentions {
 	label: string
@@ -50,6 +49,9 @@ const NavigationMenu = ({
 }: NavigationMenuProps) => {
 	return (
 		<NavigationExtentionPopup
+			contentStyle={{
+				zIndex: 999999,
+			}}
 			trigger={
 				<li key={id} className="header__item ">
 					<a className={theme}>{title}</a>
@@ -81,10 +83,8 @@ function NavigationBar({ theme }: NavigationBarProps) {
 		query: '(max-width: 810px)',
 	})
 
-	const scroll = useScroll({})
-
 	return (
-		<header className="header" id="header">
+		<header className="header" id="header" style={{position: 'absolute'}}>
 			<div className="grid__wrapper header__wrapper">
 				{isMobileScreen && <MobileMenu />}
 
@@ -129,15 +129,22 @@ function NavigationBar({ theme }: NavigationBarProps) {
 
 const NavigationExtentionPopup = styled(Popup)`
 	&-content {
-		z-index: 9999;
+		justify-content: center;
+		align-content: center;
+		padding: 1rem 0 1rem 0;
+		z-index: 999999;
 		align-items: center !important;
-		top: 50% !important;
+		top: 65px !important;
 		left: 0px !important;
 		width: 100%;
 
-		position: absolute;
-		height: 100px;
-		background-color: rgba(0, 0, 0, 0.9) !important;
+		position: absolute !important;
+		height: auto;
+		background: linear-gradient(
+			180deg,
+			rgba(255, 255, 255, 0.1) 1%,
+			rgba(2, 2, 11, 1) 10%
+		) !important;
 	}
 `
 

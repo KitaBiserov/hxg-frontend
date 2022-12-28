@@ -8,7 +8,7 @@
         "2013: основатель WISETECH",
         "2018: основатель и генеральный директор Huaxun Group"
     ],
-    "image": "images/persona/CEO.jpg"
+    "image": "assets/images/persona/CEO.jpg"
   },
   {
     "id": 2,
@@ -20,7 +20,7 @@
       "2015-2019: Яндекс, Mail.ru Директор направления Private Cloud",
       "2019:  Huaxun Group CCO"
     ],
-    "image": "images/persona/CCO.jpg"
+    "image": "assets/images/persona/CCO.jpg"
   },
   {
     "id": 3,
@@ -31,7 +31,7 @@
       "Кандидат технических наук",
       "2019: партнер Huaxin Group"
     ],
-    "image": "images/persona/Partner.jpg"
+    "image": "assets/images/persona/Partner.jpg"
   },
   {
     "id": 4,
@@ -44,7 +44,7 @@
       "2015: Главный инженер Wisetech",
       "2019: Главный инженер Huaxin Group"
     ],
-    "image": "images/persona/Chief Engineer.jpg"
+    "image": "assets/images/persona/Chief Engineer.jpg"
   },
   {
     "id": 5,
@@ -54,7 +54,7 @@
       "Руководитель направления электронной коммерции",
       "Разрабатывает и управляет бизнес-стратегиями электронной коммерции"
     ],
-    "image": "images/persona/KirillKramnik.jpg"
+    "image": "assets/images/persona/KirillKramnik.jpg"
   },
   {
     "id": 6,
@@ -64,7 +64,7 @@
       "Более 15 лет опыта работы",
       "Специалист в области бизнес-планирования, бюджетирования, финансовой аналитики и т.д."
     ],
-    "image": "images/persona/Lubov.jpg"
+    "image": "assets/images/persona/Lubov.jpg"
   },
   {
     "id": 7,
@@ -73,6 +73,6 @@
     "description": [
       "Разрабатывает и возглавляет направление энергетического и строительного оборудования"
     ],
-    "image": "images/persona/DevelopmentDirector.jpg"
+    "image": "assets/images/persona/DevelopmentDirector.jpg"
   }
 ]
